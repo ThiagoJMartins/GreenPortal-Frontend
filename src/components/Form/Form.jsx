@@ -31,7 +31,7 @@ const Form = ({ login }) => {
 		<div className={styles.form}>
 			<form className={styles.container}>
 				<div>
-					<img className={styles.logo} src="../../public/portal.png" alt="" />
+					<img className={styles.logo} src="./portal.png" alt="FormPortal" />
 				</div>
 				<label>Email</label>
 				<input

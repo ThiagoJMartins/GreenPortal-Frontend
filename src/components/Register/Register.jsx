@@ -31,7 +31,11 @@ const Register = ({ register }) => {
 		<div className={styles.form}>
 			<form className={styles.container}>
 				<div>
-					<img className={styles.logo} src="../../public/portalB.png" alt="" />
+					<img
+						className={styles.logo}
+						src="./portalB.png"
+						alt="RegisterPortal"
+					/>
 				</div>
 				<label>Email</label>
 				<input
