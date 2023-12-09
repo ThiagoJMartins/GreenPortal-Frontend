@@ -8,7 +8,7 @@ import {
 } from "./action-types";
 //!----------------------------------------------------+/
 
-const URL = "http://localhost:3001/rickandmorty/fav";
+const URL = "https://greenportal-backend.vercel.app/fav";
 
 const addFav = (character) => {
 	return async (dispatch) => {

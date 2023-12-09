@@ -13,7 +13,7 @@ import Register from "./components/Register/Register";
 //!----------------------------------------------------+/
 
 function App() {
-	const URL = "http://localhost:3001/rickandmorty/";
+	const URL = "https://greenportal-backend.vercel.app";
 
 	const [access, setAccess] = useState(false);
 	const [characters, setCharacters] = useState([]);
@@ -23,7 +23,7 @@ function App() {
 	const onSearch = async (id) => {
 		try {
 			const { data } = await axios(
-				`http://localhost:3001/rickandmorty/character/${id}`
+				`https://greenportal-backend.vercel.app/character/${id}`
 			);
 			if (data.name) {
 				const characterExists = characters.filter(
@@ -49,7 +49,7 @@ function App() {
 	const login = async (userData) => {
 		try {
 			const { email, password } = userData;
-			const URL = "http://localhost:3001/rickandmorty/login/";
+			const URL = "https://greenportal-backend.vercel.app/login/";
 			const { data } = await axios(
 				URL + `?email=${email}&password=${password}`
 			);
@@ -64,7 +64,7 @@ function App() {
 
 	const register = async (userData) => {
 		try {
-			const URL = "http://localhost:3001/rickandmorty/login/";
+			const URL = "https://greenportal-backend.vercel.app/login/";
 			const { data } = await axios.post(URL, userData);
 			alert("User has been registered successfully");
 			navigate("/");
