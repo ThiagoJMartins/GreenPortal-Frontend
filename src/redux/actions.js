@@ -8,7 +8,7 @@ import {
 } from "./action-types";
 //!----------------------------------------------------+/
 
-const URL = "https://greenportal-backend.railway.internal/fav";
+const URL = "https://greenportal-backend-production.up.railway.app/fav";
 
 const addFav = (character) => {
 	return async (dispatch) => {
