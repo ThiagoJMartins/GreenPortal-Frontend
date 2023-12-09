@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.page-bg {
+  background: url("../public/backgroud.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px) brightness(70%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 2em 2em black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border: 10px solid #000000c1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #009ec9, #00af2c);
+}
