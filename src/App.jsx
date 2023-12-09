@@ -13,7 +13,7 @@ import Register from "./components/Register/Register";
 //!----------------------------------------------------+/
 
 function App() {
-	const URL = "https://greenportal-backend.vercel.app";
+	const URL = "https://greenportal-backend.railway.internal";
 
 	const [access, setAccess] = useState(false);
 	const [characters, setCharacters] = useState([]);
@@ -23,7 +23,7 @@ function App() {
 	const onSearch = async (id) => {
 		try {
 			const { data } = await axios(
-				`https://greenportal-backend.vercel.app/character/${id}`
+				`https://greenportal-backend.railway.internal/character/${id}`
 			);
 			if (data.name) {
 				const characterExists = characters.filter(
@@ -49,7 +49,7 @@ function App() {
 	const login = async (userData) => {
 		try {
 			const { email, password } = userData;
-			const URL = "https://greenportal-backend.vercel.app/login/";
+			const URL = "https://greenportal-backend.railway.internal/login/";
 			const { data } = await axios(
 				URL + `?email=${email}&password=${password}`
 			);
@@ -64,7 +64,7 @@ function App() {
 
 	const register = async (userData) => {
 		try {
-			const URL = "https://greenportal-backend.vercel.app/login/";
+			const URL = "https://greenportal-backend.railway.internal/login/";
 			const { data } = await axios.post(URL, userData);
 			alert("User has been registered successfully");
 			navigate("/");
