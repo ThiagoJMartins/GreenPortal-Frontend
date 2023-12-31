@@ -61,8 +61,7 @@ function App() {
 
   const register = async (userData) => {
     try {
-      const URL =
-        "https://greenportal-backend-production.up.railway.app/login/";
+      const URL = `${BASE_URL}/rickandmorty/login/`;
       const { data } = await axios.post(URL, userData);
       alert("User has been registered successfully");
       navigate("/");
