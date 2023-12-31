@@ -10,10 +10,10 @@ import Error from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import Favourites from "./components/Favourites/Favourites";
 import Register from "./components/Register/Register";
-import { BASE_URL } from "./falseENV";
 //!----------------------------------------------------+/
 
 function App() {
+  const BASE_URL = "https://greenportal.onrender.com";
   const [access, setAccess] = useState(false);
   const [characters, setCharacters] = useState([]);
   const { pathname } = useLocation();
