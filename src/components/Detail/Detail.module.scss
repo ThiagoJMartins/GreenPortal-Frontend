@@ -17,6 +17,7 @@
   margin-top: 3rem;
   box-shadow: 3px 6px 15px 4px rgba(24, 161, 17, 0.368);
   transition: all 0.3s ease-in-out;
+  align-items: center;
 }
 
 .name {
@@ -49,10 +50,13 @@
 
 .subdetail {
   display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: baseline;
 }
 
 .image {
-  width: 275px;
+  width: 300px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   justify-content: center;
