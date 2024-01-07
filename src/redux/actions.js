@@ -8,7 +8,7 @@ import {
 } from "./action-types";
 //!----------------------------------------------------+/
 
-const URL = "https://greenportal.onrender.com/fav";
+const URL = "https://greenportal.onrender.com/rickandmorty/fav";
 
 const addFav = (character) => {
   return async (dispatch) => {
