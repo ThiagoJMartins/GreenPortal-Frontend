@@ -21,7 +21,7 @@ function App() {
 
   const onSearch = async (id) => {
     try {
-      const { data } = await axios(`${BASE_URL}/rickandmorty/${id}`);
+      const { data } = await axios(`${BASE_URL}/rickandmorty/character/${id}`);
       if (data.name) {
         const characterExists = characters.filter(
           (char) => char.id === data.id
