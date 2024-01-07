@@ -33,7 +33,7 @@ const Register = ({ register }) => {
         <div>
           <img
             className={styles.logo}
-            src="../../../public/portalB.png"
+            src="./portalB.png"
             alt="RegisterPortal"
           />
         </div>
