@@ -36,7 +36,7 @@ function Detail() {
         {character.name ? (
           <>
             <h2 className={styles.name}>{character.name}</h2>
-            <div>
+            <div className={styles.subdetail}>
               <img
                 className={styles.image}
                 src={character.image}
