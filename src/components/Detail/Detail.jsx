@@ -36,18 +36,23 @@ function Detail() {
         {character.name ? (
           <>
             <h2 className={styles.name}>{character.name}</h2>
-            <img
-              className={styles.image}
-              src={character.image}
-              alt={character.name}
-            />
+            <div>
+              <img
+                className={styles.image}
+                src={character.image}
+                alt={character.name}
+              />
 
-            <h4 className={styles.text}>STATUS: {character.status}</h4>
-            <h4 className={styles.text}>SPECIES: {character.species}</h4>
-            <h4 className={styles.text}>GENDER: {character.gender}</h4>
-            <h4 className={styles.text}>ORIGIN: {character.origin.name}</h4>
+              <h4 className={styles.text}>STATUS: {character.status}</h4>
+              <h4 className={styles.text}>SPECIES: {character.species}</h4>
+              <h4 className={styles.text}>GENDER: {character.gender}</h4>
+              <h4 className={styles.text}>ORIGIN: {character.origin.name}</h4>
 
-            <h4 className={styles.text}>LOCATION: {character.location.name}</h4>
+              <h4 className={styles.text}>
+                LOCATION: {character.location.name}
+              </h4>
+            </div>
+
             <button className={styles.episodeBtn} onClick={handleEpisodes}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

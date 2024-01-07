@@ -4,7 +4,7 @@
 }
 
 .detail {
-  width: 800px;
+  width: fit-content;
   height: fit-content;
   overflow: hidden;
   z-index: 1;
@@ -25,7 +25,7 @@
   color: white;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   margin-bottom: 1rem;
   animation: move 1s ease-in-out infinite alternate;
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
@@ -48,7 +48,7 @@
 }
 
 .image {
-  width: 350px;
+  width: 275px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   justify-content: center;
@@ -92,7 +92,7 @@
   color: white;
   margin: 0;
   padding-top: 1rem;
-  padding-left: 225px;
+  text-align: center;
   transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
   box-shadow: none;
 }
@@ -121,9 +121,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
-  padding-top: 20px;
-  padding-inline: 10px;
-  font-size: 100px;
+  padding-inline: 100px;
   color: rgb(0, 0, 0);
 }
 
