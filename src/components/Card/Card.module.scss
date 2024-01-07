@@ -1,6 +1,6 @@
 .tarjeta {
-  width: 300px;
-  height: 459px;
+  width: 200px;
+  height: 475px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -8,11 +8,14 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 5rem 0;
   border-radius: 20px 20px 80px 80px;
   margin: 1rem 1rem 0.5rem;
   box-shadow: 3px 6px 15px 4px rgba(24, 161, 17, 0.368);
   transition: all 0.3s ease-in-out;
+  @include sm {
+    width: 40%;
+    height: 50%;
+  }
 }
 
 .tarjeta:hover {
@@ -27,7 +30,7 @@
 
 .boton {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: inherit;
   color: white;
   cursor: pointer;
@@ -36,7 +39,9 @@
   border: none;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-right: 80px;
+  @include sm {
+    font-size: 2.5vw;
+  }
 }
 
 .boton:hover {
@@ -49,7 +54,7 @@
 
 .boton2 {
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: inherit;
   cursor: pointer;
   transition-duration: 0.5s;
@@ -57,7 +62,9 @@
   border: none;
   margin-bottom: 5px;
   margin-top: 5px;
-  margin-left: 75px;
+  @include sm {
+    font-size: 2.5vw;
+  }
 }
 
 .boton2:hover {
@@ -82,13 +89,16 @@
 }
 
 .name {
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   margin-top: -20px;
   padding-left: 5px;
   background-color: rgb(27, 90, 18);
-  margin-bottom: -5px;
+  margin-bottom: -10px;
   color: rgb(255, 255, 255);
+  @include sm {
+    font-size: 3.5vw;
+  }
 }
 
 .text {
@@ -97,4 +107,8 @@
   color: rgb(255, 255, 255);
   text-align: center;
   justify-content: center;
+  padding-bottom: 10px;
+  @include sm {
+    font-size: 2.2vw;
+  }
 }

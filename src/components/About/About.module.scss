@@ -6,8 +6,8 @@
 }
 
 .subabout {
-  width: 1000px;
-  height: 400px;
+  width: 50%;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -15,12 +15,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 5rem 0;
   border-radius: 20px;
   margin: 0.5rem;
   margin-top: 6rem;
   box-shadow: 3px 6px 15px 4px rgba(24, 161, 17, 0.368);
   transition: all 0.3s ease-in-out;
+  @include sm {
+    width: 80%;
+  }
 }
 
 .subabout:hover {
@@ -35,31 +37,33 @@
 
 .h1ab {
   color: white;
-  font-size: 3rem;
-  animation: move 2s ease-in-out infinite alternate;
-}
-
-@keyframes move {
-  from {
-    transform: translateY(0px);
-  }
-
-  to {
-    transform: translateY(10px);
+  @include sm {
+    font-size: 7vw;
   }
 }
 
 .h2ab {
   color: white;
+  text-align: center;
+  @include sm {
+    font-size: 5vw;
+  }
 }
 
 .h3ab {
   color: white;
+  text-align: center;
+  @include sm {
+    font-size: 4vw;
+  }
 }
 
 .h3abT {
   color: white;
-  font-size: 1.9rem;
+  text-align: center;
+  @include sm {
+    font-size: 5vw;
+  }
 }
 
 .img {
@@ -68,8 +72,8 @@
 }
 
 .techs {
-  max-width: fit-content;
-  max-height: fit-content;
+  width: 30%;
+  height: fit-content;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -82,6 +86,9 @@
   margin-top: 5rem;
   box-shadow: 3px 6px 15px 4px rgba(24, 161, 17, 0.368);
   transition: all 0.3s ease-in-out;
+  @include sm {
+    width: 70%;
+  }
 }
 
 .techs:hover {
@@ -95,12 +102,17 @@
 }
 
 .divP {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 3rem;
+  text-align: center;
 }
 
 .p {
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 0.8rem;
+  @include sm {
+    font-size: 3vw;
+  }
 }
